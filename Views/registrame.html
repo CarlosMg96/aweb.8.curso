@@ -43,7 +43,75 @@
       <br>
       <div class="container">
           <div class="row">
+<div class="col-6 offset-3">
+  <fieldset>
+    <legend>Formulario Registro </legend>
 
+
+    <form action="http://127.0.0.1:5500/Views/" method="POST">
+      <ul style="list-style: none;">
+      <li>
+        <label for="nombre"> Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+      </li>
+      <li>
+        <label for="primerApellido"> Primer Apellido: </label>
+        <input type="text" name="primerApellido" id="primerApellido">
+      </li>
+      <li>
+        <label for="segundoApellido"> Segundo Apellido: </label>
+        <input type="text" name="segundoApellido" id="segundoApellido">
+      </li>
+      <li>
+        <label for="#"> Tipo de Modalidad:</label>
+        <input type="checkbox" id="presencial" value="Presencial">
+        <label for="Presencial"> Presencial </label>
+
+        <input type="checkbox" id="remoto" value="Remoto">
+        <label for="Remoto"> Remoto </label>
+
+        <input type="checkbox" id="mixto" value="Mixto">
+        <label for="Mixto"> Mixto </label>
+      </li>
+      <li>
+        <input type="radio" name="sexo" id="Hombre" value="hombre">
+        <label for="hombre">Hombre </label>
+
+        <input type="radio" name="sexo" id="Mujer" value="mujer">
+        <label for="hombre">Mujer </label>
+      </li>
+      <li>
+        <label for="curso"> Curso:</label>
+        <select name="curso" id="curso">
+          <option value="0">Seleccione...</option>
+          <option value="1">Creatividad y Diseño</option>
+          <option value="2">Data Base</option>
+          <option value="3">Aplicaciones moviles con android</option>
+          <option value="4">Finanzas </option>
+        </select>
+      </li>
+      <li>
+        <label for="observaciones"> Observaciones: </label>
+        <br>
+        <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10">
+
+        </textarea>
+        </li>
+        <li>
+          <input type="submit" value="Registrar" name="Registrar" id="registrar">
+          <input type="reset" value="Cancelar" name="reset" id="reset">
+
+        </li>
+
+      </ul>
+
+
+
+
+    </form>
+  </fieldset>
+
+</div>
 
 
               
