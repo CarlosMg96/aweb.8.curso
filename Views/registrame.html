@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Registro</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <a class="navbar-brand" href="#">Inicio</a>
+        <a class="navbar-brand" href="#">Cursos | UTEZ</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,10 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
+              <li class="nav-item active">
+                <a class="nav-link" href="/index.html"> Inicio <span class="sr-only">(current)</span></a>
+              </li>
               <a class="nav-link" href="#"> Clases <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Views/instructores.html">Instructures</a>
+              <a class="nav-link" href="/Views/instructores.html">Instructures</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,64 +52,78 @@
 
 
     <form action="http://127.0.0.1:5500/Views/" method="POST">
-      <ul style="list-style: none;">
-      <li>
+
+      <div class="form-group">
         <label for="nombre"> Nombre: </label>
-        <input type="text" name="nombre" id="nombre">
-      </li>
-      <li>
-        <label for="primerApellido"> Primer Apellido: </label>
-        <input type="text" name="primerApellido" id="primerApellido">
-      </li>
-      <li>
-        <label for="segundoApellido"> Segundo Apellido: </label>
-        <input type="text" name="segundoApellido" id="segundoApellido">
-      </li>
-      <li>
-        <label for="#"> Tipo de Modalidad:</label>
-        <input type="checkbox" id="presencial" value="Presencial">
-        <label for="Presencial"> Presencial </label>
+        <input class="form-control" type="text" name="nombre" id="nombre">
 
-        <input type="checkbox" id="remoto" value="Remoto">
-        <label for="Remoto"> Remoto </label>
+      </div>
+<div class="form-group">
+  <label for="primerApellido"> Primer Apellido: </label>
+  <input class="form-control" type="text" name="primerApellido" id="primerApellido">
 
-        <input type="checkbox" id="mixto" value="Mixto">
-        <label for="Mixto"> Mixto </label>
-      </li>
-      <li>
-        <input type="radio" name="sexo" id="Hombre" value="hombre">
-        <label for="hombre">Hombre </label>
+</div>
 
-        <input type="radio" name="sexo" id="Mujer" value="mujer">
-        <label for="hombre">Mujer </label>
-      </li>
-      <li>
-        <label for="curso"> Curso:</label>
-        <select name="curso" id="curso">
-          <option value="0">Seleccione...</option>
-          <option value="1">Creatividad y Diseño</option>
-          <option value="2">Data Base</option>
-          <option value="3">Aplicaciones moviles con android</option>
-          <option value="4">Finanzas </option>
-        </select>
-      </li>
-      <li>
-        <label for="observaciones"> Observaciones: </label>
-        <br>
-        <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10">
+<div class="form-group">
+  <label for="segundoApellido"> Segundo Apellido: </label>
+  <input class="form-control" type="text" name="segundoApellido" id="segundoApellido">
 
-        </textarea>
-        </li>
-        <li>
-          <input type="submit" value="Registrar" name="Registrar" id="registrar">
-          <input type="reset" value="Cancelar" name="reset" id="reset">
+</div>
+<div class="form-group">
+  <label for="#"> Tipo de Modalidad:</label>
+  <div class="form-check">
+    <input class="form-check-imput" type="checkbox" id="presencial" value="Presencial">
+    <label class="form-check-label" for="Presencial"> Presencial </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-imput" type="checkbox" id="remoto" value="Remoto">
+    <label class="form-check-label" for="Remoto"> Remoto </label>
 
-        </li>
+  </div>
+  <div class="form-check">
+    <input class="form-check-imput" type="checkbox" id="mixto" value="Mixto">
+    <label class="form-check-label" for="Mixto"> Mixto </label>
+  </div>
 
-      </ul>
+  <br> 
+
+  <div class="form-check">
+    <input class="form-check-imput" type="radio" name="sexo" id="Hombre" value="hombre">
+    <label class="form-check-label" for="hombre">Hombre </label>
+  </div>
 
 
+<div class="form-check">
+    <input class="form-check-imput" type="radio" name="sexo" id="Mujer" value="mujer">
+    <label class="form-check-label" for="hombre">Mujer </label>
+  </div>
+  
+  <br>
+  <div class="form-check">
+    <label class="form-check-label" for="curso"> Curso:</label>
+    <select name="curso" id="curso">
+      <option value="0">Seleccione...</option>
+      <option value="1">Creatividad y Diseño</option>
+      <option value="2">Data Base</option>
+      <option value="3">Aplicaciones moviles con android</option>
+      <option value="4">Finanzas </option>
+    </select>
+  </div>
 
+  <div class="form-check">
+    <label class="form-check-label" for="observaciones"> Observaciones: </label>
+    <br>
+    <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10">
+    </textarea>
+  </div>
+
+  <div class="form-check">
+
+  </div>
+  <input class="form-check-imput" type="submit" value="Registrar" name="Registrar" id="registrar">
+  <input class="form-check-imput" type="reset" value="Cancelar" name="reset" id="reset">
+
+</div>
 
     </form>
   </fieldset>
